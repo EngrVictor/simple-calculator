@@ -1,0 +1,84 @@
+body {
+    background-color: rgb(36, 58, 105);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+h1,h3,h6 {
+    color: white;
+}
+
+button:hover {
+    color: white;
+    background-color: rgb(178, 184, 0);
+    transition: .2s ease-in-out;
+}
+
+button:focus {
+    transform: translateY(2px);
+    transition: .2s ease-in-out;
+}
+
+.last button:focus {
+    transform: none;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.center h1 {
+    text-align: right;
+    background-color: rgb(8, 25, 60);
+    padding: 30px;
+    border-radius: 5px;
+    /* display: flex;
+    justify-content: space-between; */
+}
+
+h1 .ans {
+    font-size: 25px;
+    margin-right: 60%;
+}
+
+.main {
+    width: 100%;
+    background-color: rgb(8, 40, 104);
+    border-radius: 5px;
+}
+.main div {
+    display: flex;
+    justify-content: space-between;
+    /* margin-bottom: 10px; */
+    padding: 20px 20px 0 20px;
+}
+
+.last {
+    margin-bottom: 20px;
+}
+
+.last button {
+    width: 48%;
+    color: white;
+    background-color: rgb(41, 39, 180);
+    border: 1px;
+    border-bottom: 2px solid gray;
+}
+
+.container {
+    display: flex;
+    margin: 50px auto;
+    flex-direction: column;
+    width: 30%;
+}
+
+button {
+    padding: 10px;
+    background-color: rgb(220, 215, 215);
+    width: 70px;
+    font-size: 20px;
+    font-weight: 800;
+    border: 1px;
+    border-bottom: 2px solid gray;
+    border-radius: 10px;
+}
