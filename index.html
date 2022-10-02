@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,14 +8,20 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="container">
         <div class="top">
             <h3>calc</h3>
 
             <div class="side-right">
-                <h6>THEME</h6>
-                
+                <h6>THEMES</h6>
+
+                <div class="theme">
+                    <input type="radio" name="theme" onclick="changeStyle(colors.light)" checked>
+                    <input type="radio" name="theme" onclick="changeStyle(colors.medium)">
+                    <input type="radio" name="theme" onclick="changeStyle(colors.dark)">
+                </div>
             </div>
         </div>
         <div class="center">
@@ -25,7 +32,7 @@
                 <button>7</button>
                 <button>8</button>
                 <button>9</button>
-                <button style="background-color: rgb(41, 39, 180); color: white;" id="del" class="special">DEL</button>
+                <button style="color: white;" id="del" class="special">DEL</button>
             </div>
             <div>
                 <button>4</button>
@@ -47,10 +54,11 @@
             </div>
             <div class="last">
                 <button id="reset" class="special">RESET</button>
-                <button style="background-color: rgb(180, 39, 84)" id="equal" class="special">=</button>
+                <button id="equal" class="special">=</button>
             </div>
         </div>
     </div>
     <script src="index.js"></script>
 </body>
+
 </html>
